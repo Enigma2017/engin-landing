@@ -113,14 +113,14 @@ nav{
 
 .header-content__title p{
     font-size: 84px;
-    color: #f8583b;
+    color: rgba(255, 26, 53, 0.922);
     font-weight: 900;
     letter-spacing: 4px;
 }
 
 h1{
     font-size: 86px;
-    color: #f8583b;
+    color: rgba(255, 26, 53, 0.922);
     font-weight: 900;
 }
 
@@ -136,10 +136,12 @@ h1{
 .header-content__items div{
     width: 350px;
     height: 130px;
-    background-color: #f8583b;
+    /*background-color: rgb(240, 74, 74); */
+    background: rgb(255,26,53);
+background: linear-gradient(90deg, rgba(255,26,53,0.88) 0%, rgba(244,132,132,0.19371498599439774) 100%);
     color: #fff;
     font-size: 40px;
-    font-weight: 500;
+    font-weight: 900;
     letter-spacing: 4px;
 }
 
