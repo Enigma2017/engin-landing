@@ -1,60 +1,86 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.header{
+    padding: 30px 0 15px;
+}
+
 .container{
     max-width: 1550px;
     width: 100%;
     margin-inline: auto;
 }
 
-.header{
-    padding: 25px 0;
+.logo-text{
+    margin-left: 10px;
 }
 
-.logo__up{
-    font-family: 'Dancing Script', cursive;
-    font-size: 3rem;
-    color: #55bdb1;
-    
+.logo-black{
+    font-size: 36px;
+    font-weight: 500;
+    color: black;
+    margin-left: 5px;
 }
 
-.logo__down{
-    font-family: 'Rubik Broken Fax', system-ui;
-    font-size: 3rem;
-    color: #4b50a4;
-    margin-top: -34px;
+.logo-red{
+    font-size: 48px;
+    font-weight: 900;
+    color: #f8583b;
+    letter-spacing: 3px;
+    margin-top: -30px;
 }
 
-.bi-clipboard2-check,
-.bi-car-front,
-.bi-laptop{
-    color: #55bdb1;
-    font-size: 1.5rem;
-    padding-left: 10px;
+.header-phone{
+    margin-top: 15px;
+}
+
+.header-phone a{
+    color: black;
+    font-size: 42px;
+    font-weight: 900;
+}
+
+.bi-telephone-forward-fill{
+    font-size: 34px;
+    padding-right: 5px;
 }
 
 nav{
     display: flex;
     justify-content: end;
-    margin-top: 60px;
+    padding-top: 25px;
 }
 
-.nav__menu_link{
-    padding-left: 46px;
+.nav-menu__link{
+    padding-left: 76px;
 }
 
-.nav__menu{
+.nav-menu{
     display: flex;
     list-style-type: none;
     -moz-list-style-type: none;
-    gap: 30px;
 }
 
-.nav__menu_link a{
-    font-family: 'Roboto', sans-serif;
+.nav-menu__link a{
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 28px;
     cursor: pointer;
-    font-weight: 700;
-    color: #55bdb1;
+    font-weight: 900;
+    color: #f8583b;
     text-transform: uppercase;
+}
+
+.bi-tools,
+.bi-twitch{
+    font-size: 24px;
+    padding-right: 8px;
 }
 
 .header__block{
@@ -62,7 +88,7 @@ nav{
     width: 100%;
     height: 700px;
     position: relative;
-    padding: 100px 0;
+    padding: 140px 0;
 }
 
 .header__block::before {
@@ -72,35 +98,79 @@ nav{
     left: 0;
     right: 0;
     bottom: 0;
-    background: #2e2e47;
+    background: #252530;
     opacity: .90;
 }
 
-.hizmetler__block{
-    padding: 140px 0;
-}
-
-.hizmetler__block_title{
-    font-size: 3rem;
-    font-family: 'Roboto', sans-serif;
-    color: #55bdb1;
-}
-
-.header__content{
+.header-content{
     position: absolute;
     width: 1550px;
 }
 
-.header__content_title{
-    width: 800px;
+.header-content__title{
+    width: 40%;
+}
+
+.header-content__title p{
+    font-size: 84px;
+    color: #f8583b;
+    font-weight: 900;
+    letter-spacing: 4px;
 }
 
 h1{
-    font-size: 5rem;
-    font-family: 'Roboto', sans-serif;
-    color: #55bdb1;
+    font-size: 86px;
+    color: #f8583b;
+    font-weight: 900;
 }
 
-.header__content_img{
-    margin-top: 80px;
+.header-content__items{
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 40px;
+    grid-row-gap: 35px;
+}
+
+.header-content__items div{
+    width: 350px;
+    height: 130px;
+    background-color: #f8583b;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 4px;
+}
+
+.header-content__item1{
+    grid-area: 1 / 1 / 2 / 2;
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+    padding: 35px 0 0 130px;
+}
+
+.header-content__item2{
+    grid-area: 1 / 2 / 2 / 3;
+    padding: 35px 0 0 90px;
+}
+
+.header-content__item3{
+    grid-area: 2 / 1 / 3 / 2;
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+    padding: 35px 0 0 130px;
+}
+
+.header-content__item4{
+    grid-area: 2 / 2 / 3 / 3;
+    padding: 35px 0 0 90px;
+}
+
+.service-block{
+    padding: 140px 0;
+}
+
+.service-title{
+    font-size: 72px;
+    font-weight: 900;
+    color: black;
 }
