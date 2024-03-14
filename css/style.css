@@ -11,11 +11,16 @@
     --font-main: "Poppins", sans-serif;
 }
 
+html {
+	font-size: 1px;
+}
+
 
 body{
     margin: 0;
     padding: 0;
     font-family: var(--font-main);
+    font-size: 16rem;
 }
 
 ul{
@@ -42,18 +47,18 @@ li{
     list-style: none;
 }
 
-.service{
-    padding: 148px 0;
-}
-
 h2{
-    font-size: 3.75rem;
+    font-size: 60rem;
     color: var(--orange-title);
     text-align: center;
+    padding-bottom: 80px;
 }
 
 .service{
-    padding: 120px 0;
+    margin: 30px 0;
+    padding: 90px 0;
+    background: url(../images/bg.jpg) no-repeat center center;
+    width: 100%;
 }
 
 .service-flex{
@@ -61,8 +66,60 @@ h2{
     justify-content: space-between;
 }
 
-.service-left{
-    background: url(../images/dots1.png) no-repeat center center;
+.service-left,
+.service-right{
+    margin-top: 36px;
+}
+
+.service-left li,
+.service-right li{
+    margin-bottom: 26px;
+    font-weight: 600;
+    color: var(--grey-color);
+    font-size: 20rem;
+}
+
+.service-left li img,
+.service-right li img{
+    margin: 0 8px -14px 0;
+}
+
+.service-img{
+    margin-left: -60px;
+}
+
+.contacts{
+    padding-bottom: 128px;
+}
+
+.contacts h3{
+    font-size: 28rem;
+    font-weight: 600;
+    padding-bottom: 20px;
+    color: var(--orange-title);
+}
+
+.contacts a{
+    font-size: 20rem;
+    font-weight: 500;
+    color: var(--grey-color);
+}
+
+.contacts p{
+    padding-bottom: 36px;
+}
+
+.contacts-flex{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.footer{
+    background: url(../images/footer.jpg) no-repeat center;
+    width: 100%;
+    padding: 76px;
+    background-size: cover;
 }
 
 @media screen and (max-width: 1200px){
