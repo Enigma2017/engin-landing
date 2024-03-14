@@ -52,6 +52,15 @@ h2{
     text-align: center;
 }
 
+.service{
+    padding: 120px 0;
+}
+
+.service-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
 @media screen and (max-width: 1200px){
     .container{
         width: 90%;
