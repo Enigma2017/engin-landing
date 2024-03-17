@@ -109,17 +109,18 @@ h1{
 
 .header-sq{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 25px;
-    max-width: 430px;
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
     margin-top: 80px;
+    max-width: 665px;
 }
 
 .sq1{
     height: 61px;
-    width: 195px;
-    font-size: 30rem;
+    width: 210px;
+    font-size: 26rem;
     font-weight: 600;
     color: var(--orange-title);
     border: 1px solid var(--orange-title);
@@ -469,7 +470,7 @@ h2{
     }
     
     .header-title__text{
-        font-size: 24px;
+        font-size: 24rem;
         text-align: center;
     }
     
@@ -486,8 +487,8 @@ h2{
     .sq1{
         height: 41px;
         width: 160px;
-        font-size: 26rem;
-        padding: 6px 14px;
+        font-size: 18rem;
+        padding: 6px 10px;
     }
 
     h2{
